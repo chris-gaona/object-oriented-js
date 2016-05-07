@@ -1,9 +1,12 @@
 function Song(title, artist, duration) {
   var song = this;
+  //calls Media constructor function using the call method
   Media.call(song, title, duration);
   this.artist = artist;
 }
 
+//creates the prototype chance for the Song prototype to inherit from the
+//Media prototype
 Song.prototype = Object.create(Media.prototype);
 
 Song.prototype.toHTML = function() {
