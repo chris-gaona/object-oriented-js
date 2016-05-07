@@ -5,3 +5,7 @@ var walkingOnSunshine = new Song("Walking on Sunshine", "Katrina and the Waves",
 
 playlist.add(hereComesTheSun);
 playlist.add(walkingOnSunshine);
+
+var playlistElement = document.getElementById('playlist');
+
+playlist.renderInElement(playlistElement);
