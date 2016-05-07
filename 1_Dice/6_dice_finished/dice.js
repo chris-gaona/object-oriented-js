@@ -2,6 +2,8 @@ function Dice(sides) {
   this.sides = sides;
 }
 
+//prototype makes it so you can share the same function without
+//duplicating the same function on each instance
 Dice.prototype.roll = function () {
     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
